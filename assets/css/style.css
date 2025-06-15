@@ -5332,6 +5332,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
+
 .banner__items--content.two {
   top: 80%;
   -webkit-transform: translatey(-50%);
