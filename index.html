@@ -13,6 +13,8 @@
   <link rel="preload" class="font-main" as="style" href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&subset=cyrillic,latin&display=swap">
   <link rel="stylesheet" class="font-main" href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&subset=cyrillic,latin&display=swap" media="print" onload="this.media='all'">
 
+
+
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     
    <!-- ======= All CSS Plugins here ======== -->
@@ -21,9 +23,12 @@
 
   <!-- Plugin css -->
   <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-  
+  <link rel="preload" as="style" href="assets/css/plugins/iconsfont/style.css">
+  <link rel="stylesheet" as="style" href="assets/css/plugins/iconsfont/style.css">
   <!-- Custom Style CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+
 </head>
 
 <body>
@@ -33,46 +38,9 @@
         <!-- Start Header topbar -->
         <div class="header__topbar bg__primary">
             <div class="container-fluid">
-                <div class="header__topbar--inner d-flex align-items-center justify-content-between">
+                <div class="header__topbar--inner d-flex align-items-center justify-content-center">
                     <div class="header__shipping">
-                        <p class="header__shipping--text text-white">Get Up To 80% off In your first Offer!</p>
-                    </div>
-                    <div class="language__currency d-none d-lg-block">
-                        <ul class="d-flex align-items-center">
-                            <li class="language__currency--list">
-                                <a class="account__currency--link text-white" href="#">
-                                    <img src="assets/img/icon/usd-icon.webp" alt="currency">
-                                    <span>Currency</span> 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
-                                        <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
-                                    </svg>
-                                </a>
-                                <div class="dropdown__currency">
-                                    <ul>
-                                        <li class="currency__items"><a class="currency__text" href="#">CAD</a></li>
-                                        <li class="currency__items"><a class="currency__text" href="#">CNY</a></li>
-                                        <li class="currency__items"><a class="currency__text" href="#">EUR</a></li>
-                                        <li class="currency__items"><a class="currency__text" href="#">GBP</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="language__currency--list">
-                                <a class="language__switcher text-white" href="#">
-                                    <img class="language__switcher--icon__img" src="assets/img/icon/language-icon.webp" alt="currency">
-                                    <span>Language</span> 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
-                                        <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
-                                    </svg>
-                                </a>
-                                <div class="dropdown__language">
-                                    <ul>
-                                        <li class="language__items"><a class="language__text" href="#">France</a></li>
-                                        <li class="language__items"><a class="language__text" href="#">Russia</a></li>
-                                        <li class="language__items"><a class="language__text" href="#">Spanish</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+                        <p class="header__shipping--text text-white">По всей России с 12 по 19 июня включительно</p>
                     </div>
                 </div>
             </div>
@@ -90,91 +58,136 @@
                         </a>
                     </div>
                     <div class="main__logo">
-                        <h1 class="main__logo--title"><a class="main__logo--link" href="index.html"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a></h1>
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="#"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a></h1>
                     </div>
                     <div class="header__menu d-none d-lg-block">
                         <nav class="header__menu--navigation">
                             <ul class="d-flex">
-                                <li class="header__menu--items">
-                                    <a class="header__menu--link" href="index.html">Home <span class="menu__plus--icon">+</span></a>
-                                    <ul class="header__sub--menu">
-                                        <li class="header__sub--menu__items"><a href="index.html" class="header__sub--menu__link">Home One</a></li>
-                                        <li class="header__sub--menu__items"><a href="index-2.html" class="header__sub--menu__link">Home Two</a></li>
-                                        <li class="header__sub--menu__items"><a href="index-3.html" class="header__sub--menu__link">Home Three</a></li>
+                                <li class="header__menu--items mega__menu--items">
+                                    <a class="header__menu--link" href="#">Каталог <span class="header__menu-angle icon icon-angle-down"></span></a>
+                                    <ul class="header__mega--menu d-flex">
+                                        <li class="header__mega--menu__li">
+                                            <span class="header__mega--subtitle"><a title="Смотреть все" href="#">Смотреть все</a></span>
+                                            <ul class="header__mega--sub__menu">
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="ANITA"  href="#">ANITA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Новинки" href="#">Новинки</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="MUST HAVE" href="#">MUST HAVE</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Скоро в продаже" href="#">Скоро в продаже</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Подарочные карты" href="#">Подарочные карты</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Premium line" href="#">Premium line</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="RESORT" href="#">RESORT</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Платья" href="#">Платья</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Верхняя одежда" href="#">Верхняя одежда</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__mega--menu__li">
+                                            <span class="header__mega--subtitle"><a title="Комплекты" href="#">Комплекты</a></span>
+                                            <ul class="header__mega--sub__menu">
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Свитеры и джемперы" href="#">Свитеры и джемперы</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Кардиганы и накидки" href="#">Кардиганы и накидки</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Брюки" href="#">Брюки</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Юбки" href="#">Юбки</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Топы" href="#">Топы</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Жакеты" href="#">Жакеты</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Аксессуары" href="#">Аксессуары</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="Вечерняя коллекция" href="#">Вечерняя коллекция</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="OUTLET" href="#">OUTLET</a></li>
+                                            </ul>
+                                        </li>
+
                                     </ul>
                                 </li>
                                 <li class="header__menu--items mega__menu--items">
-                                    <a class="header__menu--link" href="shop.html">Shop <span class="menu__plus--icon">+</span></a>
+                                    <a class="header__menu--link" href="#">Капсулы <span class="header__menu-angle icon icon-angle-down"></span></a>
                                     <ul class="header__mega--menu d-flex">
                                         <li class="header__mega--menu__li">
-                                            <span class="header__mega--subtitle">Column One</span>
                                             <ul class="header__mega--sub__menu">
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop.html">Shop Left Sidebar</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid.html">Shop Grid</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid-list.html">Shop Grid List</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-list.html">Shop List</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="AMUSE"  href="#">AMUSE</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="ANDREA" href="#">ANDREA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="BAGIRA" href="#">BAGIRA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="BALI" href="#">BALI</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="CLARE" href="#">CLARE</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="COTY" href="#">COTY</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="ENIGMA" href="#">ENIGMA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="ERIKA" href="#">ERIKA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="FLUFFY" href="#">FLUFFY</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="JONI" href="#">JONI</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="KHAYAL" href="#">KHAYAL</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="MISHA" href="#">MISHA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="MIU" href="#">MIU</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="MOLLY" href="#">MOLLY</a></li>
                                             </ul>
                                         </li>
                                         <li class="header__mega--menu__li">
-                                            <span class="header__mega--subtitle">Column Two</span>
                                             <ul class="header__mega--sub__menu">
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-details.html">Standard Product</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-variable.html">Video Product</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-variable.html">Variable Product</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-left-sidebar.html">Product Left Sidebar</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-gallery.html">Product Gallery</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="NARINA" href="#">NARINA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="NORA" href="#">NORA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="OLIVIA" href="#">OLIVIA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="PALOMA" href="#">PALOMA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="PETRA" href="#">PETRA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="ROMEE" href="#">ROMEE</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="SHANTY" href="#">SHANTY</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="SORAYA" href="#">SORAYA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="STORY" href="#">STORY</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="TATUM" href="#">TATUM</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="TEYA" href="#">TEYA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="VALERA" href="#">VALERA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="VESTA" href="#">VESTA</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" title="WEEKEND" href="#">WEEKEND</a></li>
                                             </ul>
                                         </li>
-                                        <li class="header__mega--menu__li">
-                                            <span class="header__mega--subtitle">Column Three</span>
-                                            <ul class="header__mega--sub__menu">
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="my-account.html">My Account</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="my-account-2.html">My Account 2</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="404.html">404 Page</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="login.html">Login Page</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="faq.html">Faq Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="header__mega--menu__li">
-                                            <span class="header__mega--subtitle">Column Four</span>
-                                            <ul class="header__mega--sub__menu">
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="compare.html">Compare Pages</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="cart.html">Cart Page</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="checkout.html">Checkout page</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="wishlist.html">Wishlist Page</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="404.html">Error Page</a></li>
-                                            </ul>
-                                        </li>
+
                                     </ul>
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="about.html">About US </a>  
-                                </li>
-                                <li class="header__menu--items">
-                                    <a class="header__menu--link" href="blog.html">Blog <span class="menu__plus--icon">+</span> </a>
+                                    <a class="header__menu--link" href="#">Покупателям <span class="header__menu-angle icon icon-angle-down"></span></a>
                                     <ul class="header__sub--menu">
-                                        <li class="header__sub--menu__items"><a href="blog.html" class="header__sub--menu__link">Blog Grid</a></li>
-                                        <li class="header__sub--menu__items"><a href="blog-details.html" class="header__sub--menu__link">Blog Details</a></li>
-                                        <li class="header__sub--menu__items"><a href="blog-left-sidebar.html" class="header__sub--menu__link">Blog Left Sidebar</a></li>
-                                        <li class="header__sub--menu__items"><a href="blog-right-sidebar.html" class="header__sub--menu__link">Blog Right Sidebar</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Рекомендации по уходу" class="header__sub--menu__link">Рекомендации по уходу</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Часто задаваемые вопросы" class="header__sub--menu__link">Часто задаваемые вопросы</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Обмен и возврат" class="header__sub--menu__link">Обмен и возврат</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Оплата" class="header__sub--menu__link">Оплата</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Доставка" class="header__sub--menu__link">Доставка</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Таблица размеров" class="header__sub--menu__link">Таблица размеров</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Реквизиты организации" class="header__sub--menu__link">Реквизиты организации</a></li>
                                     </ul>
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link " href="#">Pages <span class="menu__plus--icon">+</span></a>
+                                    <a class="header__menu--link " href="#">О Нас <span class="header__menu-angle icon icon-angle-down"></span></a>
                                     <ul class="header__sub--menu">
-                                        <li class="header__sub--menu__items"><a href="about.html" class="header__sub--menu__link">About Us</a></li>
-                                        <li class="header__sub--menu__items"><a href="contact.html" class="header__sub--menu__link">Contact Us</a></li>
-                                        <li class="header__sub--menu__items"><a href="cart.html" class="header__sub--menu__link">Cart Page</a></li>
-                                        <li class="header__sub--menu__items"><a href="portfolio.html" class="header__sub--menu__link">Portfolio Page</a></li>
-                                        <li class="header__sub--menu__items"><a href="wishlist.html" class="header__sub--menu__link">Wishlist Page</a></li>
-                                        <li class="header__sub--menu__items"><a href="login.html" class="header__sub--menu__link">Login Page</a></li>
-                                        <li class="header__sub--menu__items"><a href="404.html" class="header__sub--menu__link">Error Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Контакты и адрес магазина" class="header__sub--menu__link">Контакты и адрес магазина</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Политика конфиденциальности" class="header__sub--menu__link">Политика конфиденциальности</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Вакансии" class="header__sub--menu__link">Вакансии</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="О бренде" class="header__sub--menu__link">О бренде</a></li>
                                     </ul>
                                 </li>
-                                <li class="header__menu--items">
-                                    <a class="header__menu--link" href="contact.html">Contact </a>  
+                                  <li class="header__menu--items">
+                                    <a class="header__menu--link " href="#">Что то еще<span class="header__menu-angle icon icon-angle-down"></span></a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="#" title="Контакты и адрес магазина" class="header__sub--menu__link">Контакты и адрес магазина</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Политика конфиденциальности" class="header__sub--menu__link">Политика конфиденциальности</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Вакансии" class="header__sub--menu__link">Вакансии</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="О бренде" class="header__sub--menu__link">О бренде</a></li>
+                                    </ul>
+                                </li> 
+                                 <li class="header__menu--items">
+                                    <a class="header__menu--link " href="#">Что то еще <span class="header__menu-angle icon icon-angle-down"></span></a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="#" title="Контакты и адрес магазина" class="header__sub--menu__link">Контакты и адрес магазина</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Политика конфиденциальности" class="header__sub--menu__link">Политика конфиденциальности</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Вакансии" class="header__sub--menu__link">Вакансии</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="О бренде" class="header__sub--menu__link">О бренде</a></li>
+                                    </ul>
+                                </li> 
+                                 <li class="header__menu--items">
+                                    <a class="header__menu--link " href="#">Что то еще <span class="header__menu-angle icon icon-angle-down"></span></a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="#" title="Контакты и адрес магазина" class="header__sub--menu__link">Контакты и адрес магазина</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Политика конфиденциальности" class="header__sub--menu__link">Политика конфиденциальности</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="Вакансии" class="header__sub--menu__link">Вакансии</a></li>
+                                        <li class="header__sub--menu__items"><a href="#" title="О бренде" class="header__sub--menu__link">О бренде</a></li>
+                                    </ul>
                                 </li>
+                                                                                                                           
                             </ul>
                         </nav>
                     </div>
@@ -511,8 +524,10 @@
         <section class="hero__slider--section">
             <div class="hero__slider--inner hero__slider--activation swiper">
                 <div class="hero__slider--wrapper swiper-wrapper">
+
+
                     <div class="swiper-slide ">
-                        <div class="hero__slider--items hero__slider--bg slider1">
+                        <div class="hero__slider--items hero__slider--bg slider2">
                             <div class="container-fluid">
                                 <div class="hero__slider--items__inner">
                                     <div class="row row-cols-1">
@@ -531,35 +546,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide ">
-                        <div class="hero__slider--items hero__slider--bg slider2">
-                            <div class="container-fluid">
-                                <div class="hero__slider--items__inner">
-                                    <div class="row">
-                                        <div class="col-lg-6 offset-lg-6">
-                                            <div class="slider__content text-center">
-                                                <p class="slider__content--desc desc1 right text-white mb-15">Discover our best furniture collection from home</p> 
-                                                <h2 class="slider__content--maintitle text-white h1">Stylish Furniture <br>
-                                                    Bring Beauti</h2>
-                                                <p class="slider__content--desc text-white mb-35 d-sm-2-none">Great furniture can bring beauty at your home, So buy our popular <br>
-                                                    and stylish furniture. Now you get up to 100 % discount now.</p>    
-                                                <a class="slider__content--btn primary__btn" href="shop.html">Start to Buying</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide ">
+                     <div class="swiper-slide ">
                         <div class="hero__slider--items hero__slider--bg slider3">
                             <div class="container-fluid">
                                 <div class="hero__slider--items__inner">
                                     <div class="row row-cols-1">
                                         <div class="col">
                                             <div class="slider__content">
-                                                <p class="slider__content--desc desc1 text-white mb-15">Discover our best furniture collection from home</p> 
-                                                <h2 class="slider__content--maintitle text-white h1">Stylish Furniture <br>
+                                                <p class="slider__content--desc desc1 text-white mb-15">gdfgdfgdf</p> 
+                                                <h2 class="slider__content--maintitle text-white h1">234234gfrdgdfgdfgdf <br>
                                                     Bring Beauti</h2>
                                                 <p class="slider__content--desc text-white mb-35 d-sm-2-none">Great furniture can bring beauty at your home, So buy our popular <br>
                                                     and stylish furniture. Now you get up to 100 % discount now.</p>    
@@ -570,7 +565,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                   
                 </div>
                 <div class="swiper__nav--btn swiper-button-next"></div>
                 <div class="swiper__nav--btn swiper-button-prev"></div>
@@ -582,32 +577,48 @@
         <section class="banner__section section--padding">
             <div class="container-fluid">
                 <div class="row mb--n28">
-                    <div class="col-lg-6 col-md-6 col-sm-6 mb-28">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-28">
                         <div class="banner__items">
-                            <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="assets/img/banner/banner1.webp" alt="banner-img">
-                                <div class="banner__items--content one">
-                                    <h2 class="banner__items--content__title">White Minimalist <br>
-                                        Combo Sofa </h2>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 mb-28">
-                        <div class="banner__items">
-                            <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="assets/img/banner/banner2.webp" alt="banner-img">
+                            <a class="banner__items--thumbnail position__relative" href="#"><img class="banner__items--thumbnail__img" src="https://static.insales-cdn.com/r/QKPuhA9zDpE/rs:fill-down:360:515:1/q:100/plain/files/1/846/40665934/original/try_on_dress_04-03-20251654__de5a060561e64e6df2e8f849784cccb9_5ead982230462d8cf539e5bdfc1eb0f0.jpg@jpg" alt="banner-img">
                                 <div class="banner__items--content two">
-                                    <h2 class="banner__items--content__title">Modern Stylish <br>
-                                        Single Sofa</h2>
+                                    <h2 class="banner__items--content__title two">ПЛАТЬЯ</h2>
                                 </div>
                             </a>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-28">
+                        <div class="banner__items">
+                            <a class="banner__items--thumbnail position__relative" href="#"><img class="banner__items--thumbnail__img" src="https://static.insales-cdn.com/r/H0UQ2PNGW3w/rs:fill-down:360:515:1/q:100/plain/files/1/654/40665742/original/try_on_dress_04-03-20250948___1__7dcaaa479fac9af8b76281784704716b.jpg@jpg" alt="banner-img">
+                                <div class="banner__items--content two">
+                                    <h2 class="banner__items--content__title two">КАРДИГАНЫ И НАКИДКИ</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 mb-28">
+                        <div class="banner__items">
+                            <a class="banner__items--thumbnail position__relative" href="#"><img class="banner__items--thumbnail__img" src="https://static.insales-cdn.com/r/7VFsJeDR40I/rs:fill-down:360:515:1/q:100/plain/files/1/811/40665899/original/try_on_dress_04-03-20250078___2__85be5cd26cc0fd6bc8b8ffb893668dc0.jpg@jpg" alt="banner-img">
+                                <div class="banner__items--content two">
+                                    <h2 class="banner__items--content__title two">ЮБКИ</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-28">
+                        <div class="banner__items">
+                            <a class="banner__items--thumbnail position__relative" href="#"><img class="banner__items--thumbnail__img" src="https://static.insales-cdn.com/r/Atl8m-LYdsQ/rs:fill-down:360:515:1/q:100/plain/files/1/843/40665931/original/try_on_dress_04-03-20250647__b24402af4e4240abc197e3fb2879f63f_68ddb20b4e88efa72c1816d0e23485c8.jpg@jpg" alt="banner-img">
+                                <div class="banner__items--content two">
+                                    <h2 class="banner__items--content__title two">КОМПЛЕКТЫ</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>                                       
                     <div class="col-lg-6 col-md-6 col-sm-6 mb-28">
                         <div class="banner__items">
                             <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="assets/img/banner/banner3.webp" alt="banner-img">
                                 <div class="banner__items--content three">
-                                    <h2 class="banner__items--content__title">Larger Minimal <br>
-                                        Wooden Chair </h2>
+                                    <h2 class="banner__items--content__title">Скоро<br>
+                                        в продаже</h2>
                                 </div>
                             </a>
                         </div>

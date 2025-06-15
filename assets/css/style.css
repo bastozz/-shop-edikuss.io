@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS INDEXING */
 :root {
-  --primary-color: #121a25;
+  --primary-color: #ff720d;
   --secondary-color: #f51c1c;
   --secondary-color2: #4f5ac2;
   --yellow-color: #ffc107;
@@ -20,7 +20,7 @@
   --bg-gray-color: #f7f8fc;
   --gray-color: #ebebeb;
   --gray-color2: #f5f5f5;
-  --josefin-sans: "Josefin Sans", sans-serif;
+  --font-family: "Montserrat";
   --open-sans: "Open Sans", sans-serif;
   --body-font-size: 1.6rem;
   --body-font-weight: 400;
@@ -59,7 +59,7 @@ body {
 }
 
 body {
-  font-family: var(--josefin-sans);
+  font-family: var(--font-family);
   font-size: var(--body-font-size, 1.6rem);
   font-weight: var(--body-font-weight);
   font-style: normal;
@@ -3777,7 +3777,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .hero__slider--bg.slider2 {
-  background: url(../img/slider/home1-slider2.webp);
+  background: url(../img/slider/home1-slider2.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -3791,7 +3791,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .hero__slider--bg.slider3 {
-  background: url(../img/slider/home1-slider3.webp);
+  background: url(../img/slider/home1-slider3.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -5313,7 +5313,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .banner__items--content.one {
-  top: 50%;
+  top: 80%;
   left: auto;
   right: 2rem;
   -webkit-transform: translatey(-50%);
@@ -5333,7 +5333,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .banner__items--content.two {
-  top: 50%;
+  top: 80%;
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
 }
@@ -6020,10 +6020,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .choiceus__banner--thumbnail.two {
   position: absolute;
-  top: 50%;
+  top: 80%;
   right: 0;
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
+}
+h2.banner__items--content__title.two
+ {
+    font-size: 1.8rem;
 }
 
 .choiceus__banner--thumbnail__img:hover {

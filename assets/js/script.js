@@ -116,7 +116,7 @@ var swiper = new Swiper(".hero__slider--activation", {
   speed: 500,
   spaceBetween: 30,
   autoplay: {
-    delay: 3000,
+    delay: 7000,
     disableOnInteraction: false,
   },
   navigation: {
